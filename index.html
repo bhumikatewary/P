@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arjun Sharma - Product Manager | Building Digital Products with Empathy</title>
+    <meta name="description" content="Product Manager based in Bangalore, India with 5+ years experience in fintech and e-commerce. Building impactful digital products with empathy and strategy.">
+    <meta property="og:title" content="Arjun Sharma - Product Manager">
+    <meta property="og:description" content="Building impactful digital products with empathy and strategy">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-text">Arjun Sharma</span>
+                <div class="brand-accent"></div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-pattern"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Namaste, I'm</span>
+                        <span class="name">Arjun Sharma</span>
+                    </h1>
+                    <p class="hero-role">Product Manager</p>
+                    <p class="hero-tagline">Building impactful digital products with empathy and strategy</p>
+                    <div class="hero-actions">
+                        <button class="btn btn--primary">Download Resume</button>
+                        <button class="btn btn--outline" onclick="scrollToSection('projects')">View Projects</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <div class="profile-placeholder">
+                            <div class="profile-initials">AS</div>
+                        </div>
+                        <div class="mandala-border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider">
+                    <div class="lotus-divider"></div>
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">I'm a Product Manager with 5+ years of experience in fintech and e-commerce, passionate about creating user-centric solutions that drive business growth.</p>
+                    <p class="about-philosophy">Based in Bangalore, I believe in the principle of 'Seva' — creating meaningful value for users through thoughtful product strategy, data-driven decisions, and cross-functional leadership.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-number">5+</span>
+                            <span class="highlight-label">Years Experience</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">2M+</span>
+                            <span class="highlight-label">Users Impacted</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">₹50CR+</span>
+                            <span class="highlight-label">Revenue Generated</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="mandala-pattern"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects & Case Studies</h2>
+                <div class="section-divider">
+                    <div class="lotus-divider"></div>
+                </div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-project="0">
+                    <div class="project-header">
+                        <h3 class="project-title">Digital Banking App Redesign</h3>
+                        <div class="project-icon">📱</div>
+                    </div>
+                    <p class="project-description">Led the complete redesign of a mobile banking app serving 2M+ users</p>
+                    <div class="project-impact">
+                        <span class="impact-metric">40% ↑ User Engagement</span>
+                        <span class="impact-metric">25% ↓ Support Tickets</span>
+                    </div>
+                    <button class="btn btn--secondary project-cta" onclick="openProjectModal(0)">View Case Study</button>
+                </div>
+
+                <div class="project-card" data-project="1">
+                    <div class="project-header">
+                        <h3 class="project-title">AI-Powered Recommendation Engine</h3>
+                        <div class="project-icon">🤖</div>
+                    </div>
+                    <p class="project-description">Built personalized product recommendation system for e-commerce platform</p>
+                    <div class="project-impact">
+                        <span class="impact-metric">30% ↑ Conversion Rate</span>
+                        <span class="impact-metric">₹50CR Revenue</span>
+                    </div>
+                    <button class="btn btn--secondary project-cta" onclick="openProjectModal(1)">View Case Study</button>
+                </div>
+
+                <div class="project-card" data-project="2">
+                    <div class="project-header">
+                        <h3 class="project-title">Supply Chain Optimization Platform</h3>
+                        <div class="project-icon">🚛</div>
+                    </div>
+                    <p class="project-description">Developed B2B platform to streamline vendor-retailer relationships</p>
+                    <div class="project-impact">
+                        <span class="impact-metric">60% ↓ Processing Time</span>
+                        <span class="impact-metric">500+ Vendors</span>
+                    </div>
+                    <button class="btn btn--secondary project-cta" onclick="openProjectModal(2)">View Case Study</button>
+                </div>
+
+                <div class="project-card" data-project="3">
+                    <div class="project-header">
+                        <h3 class="project-title">Customer Support Chatbot Integration</h3>
+                        <div class="project-icon">💬</div>
+                    </div>
+                    <p class="project-description">Integrated AI chatbot to handle customer queries and reduce support load</p>
+                    <div class="project-impact">
+                        <span class="impact-metric">70% ↓ Response Time</span>
+                        <span class="impact-metric">85% Resolution Rate</span>
+                    </div>
+                    <button class="btn btn--secondary project-cta" onclick="openProjectModal(3)">View Case Study</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="section-divider">
+                    <div class="lotus-divider"></div>
+                </div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-title">Product Strategy</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Product Roadmapping</span>
+                        <span class="skill-item">Market Analysis</span>
+                        <span class="skill-item">Competitive Intelligence</span>
+                        <span class="skill-item">OKR Setting</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-title">User Research</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">User Interviews</span>
+                        <span class="skill-item">Usability Testing</span>
+                        <span class="skill-item">Personas & Journey Mapping</span>
+                        <span class="skill-item">Behavioral Analytics</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-title">Design Thinking</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Design Sprints</span>
+                        <span class="skill-item">Prototyping</span>
+                        <span class="skill-item">Wireframing</span>
+                        <span class="skill-item">User Experience Design</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-title">Analytics</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">SQL</span>
+                        <span class="skill-item">Google Analytics</span>
+                        <span class="skill-item">A/B Testing</span>
+                        <span class="skill-item">Data Visualization</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-title">Leadership</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Cross-functional Collaboration</span>
+                        <span class="skill-item">Stakeholder Management</span>
+                        <span class="skill-item">Team Leadership</span>
+                        <span class="skill-item">Agile/Scrum</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-title">Communication</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Presentation Skills</span>
+                        <span class="skill-item">Technical Writing</span>
+                        <span class="skill-item">Customer Advocacy</span>
+                        <span class="skill-item">Conflict Resolution</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Colleagues Say</h2>
+                <div class="section-divider">
+                    <div class="lotus-divider"></div>
+                </div>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">Arjun has an exceptional ability to translate complex user needs into actionable product requirements. His data-driven approach and cultural sensitivity made our global product launch in India highly successful.</p>
+                    <div class="testimonial-author">
+                        <strong>Priya Mehta</strong>
+                        <span>VP Engineering, TechCorp</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">Working with Arjun was transformative for our team. He brought clarity to our product vision and his collaborative leadership style helped us deliver our best quarter ever.</p>
+                    <div class="testimonial-author">
+                        <strong>Rajesh Kumar</strong>
+                        <span>Head of Design, FinanceApp</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">Arjun's strategic thinking and execution excellence helped us scale our platform from 10K to 1M users. His understanding of the Indian market is unparalleled.</p>
+                    <div class="testimonial-author">
+                        <strong>Sarah Chen</strong>
+                        <span>CEO, StartupCo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="section-divider">
+                    <div class="lotus-divider"></div>
+                </div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in touch</h3>
+                    <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about product management.</p>
+                    <div class="social-links">
+                        <a href="mailto:arjun.sharma@email.com" class="social-link" target="_blank">
+                            <span class="social-icon">📧</span>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://linkedin.com/in/arjunsharma-pm" class="social-link" target="_blank">
+                            <span class="social-icon">💼</span>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://twitter.com/arjun_pm" class="social-link" target="_blank">
+                            <span class="social-icon">🐦</span>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="https://medium.com/@arjunsharma" class="social-link" target="_blank">
+                            <span class="social-icon">✍️</span>
+                            <span>Medium</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                        <div class="error-message" id="nameError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                        <div class="error-message" id="messageError"></div>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal hidden" id="projectModal">
+        <div class="modal-backdrop" onclick="closeProjectModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <button class="modal-close" onclick="closeProjectModal()" aria-label="Close modal">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="case-study-section">
+                    <h3>Problem Statement</h3>
+                    <p id="modalProblem"></p>
+                </div>
+                <div class="case-study-section">
+                    <h3>Research Insights</h3>
+                    <p id="modalResearch"></p>
+                </div>
+                <div class="case-study-section">
+                    <h3>Solution Design & Execution</h3>
+                    <p id="modalSolution"></p>
+                </div>
+                <div class="case-study-section">
+                    <h3>Outcomes & Learnings</h3>
+                    <p id="modalOutcomes"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
